@@ -1,0 +1,145 @@
+#places,
+#map {
+  width: calc(100% - 2%);
+  margin: 1%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.top {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  height: 330px;
+  border-radius: 20px;
+  border: 1px solid silver;
+  box-shadow: 0px 0px 10px black;
+}
+
+.top div {
+  padding: 20px;
+}
+
+.top h2 {
+  text-align: center;
+  font-size: 25px;
+  color: #080808;
+  margin: 0;
+}
+
+.top p {
+  font-size: 16px;
+  text-indent: 30px;
+  text-align: justify;
+  margin: 0;
+}
+
+.top img {
+  padding: 15px;
+  border-radius: 30px;
+  width: 500px;
+  height: 300px;
+}
+
+#back-top {
+  background-image: url(../img/icon-up.png);
+  background-size: cover;
+  background-color: rgba(244, 248, 6, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  box-shadow: 0px 0px 15px whitesmoke;
+}
+
+#back-top:hover {
+  border: 1px solid black;
+  box-shadow: 0px 0px 15px whitesmoke;
+}
+
+#back-top a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+#map {
+  height: 500px;
+}
+
+@media screen and (min-width: 350px) and (max-width: 699px) {
+  .top {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top img {
+    display: flex;
+    width: 95%;
+    height: auto;
+  }
+  .top1,
+  .top3,
+  .top5,
+  .top7,
+  .top9,
+  .top11,
+  .top13,
+  .top15,
+  .top17,
+  .top19,
+  .top21,
+  .top23,
+  .top25 {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1099px) {
+  .top {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top img {
+    display: flex;
+    width: 95%;
+    height: auto;
+  }
+
+  .top1,
+  .top3,
+  .top5,
+  .top7,
+  .top9,
+  .top11,
+  .top13,
+  .top15,
+  .top17,
+  .top19,
+  .top21,
+  .top23,
+  .top25 {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1500px) {
+  .top {
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .top img {
+    display: flex;
+    width: 50%;
+    height: auto;
+  }
+}
